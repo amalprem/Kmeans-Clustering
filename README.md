@@ -137,6 +137,20 @@ distance from cluster to target variable is selected for merging clusters such t
 Have ran this algorithm for diabetes data set and new york dataset of comments. Have performed required
 EDA on datasets.
 
+Evaluation Metric
+
+From the line plot below for error and sum of square error with number of clusters it can be seen that error
+graph balances out with increase in the number of clusters i.e from 2 to 5. The error is decreasing with increase 
+in number of clusters. Even the sum of square error shows a decrease with increase in the number of
+clusters. From the box plot for error wrt number of clusters, shows the median error for each cluster shows
+a gradual decrease. The box plot of runtime shows that with increase in number of clusters the median run
+time also increases with increase in number of clusters.
+
+![image](https://user-images.githubusercontent.com/37649277/236167677-65f74dbc-c263-4434-89c2-f8e4782fd471.png)
+![image](https://user-images.githubusercontent.com/37649277/236167692-ebb0833f-dffe-4aeb-b523-407d9a59841d.png)
+![image](https://user-images.githubusercontent.com/37649277/236167716-92bd3f3e-67ce-43ca-9631-6b3c87fa800e.png)
+
+
 Kmeans Llyod Algorithm with SSE convergence
 
 I have implemented the kmeans llyod algorithm with sse convergence for number of clusters ranging from
@@ -147,6 +161,28 @@ defined.Rest all the functions are similar to kmeans Llyods. According to me, SS
 better metric to evaluate the quality of clusters. Improving the cohesion among the datapoints assigned to
 same cluster and when it reaches a certain threshold the algorithm converges. Have ran this algorithm for
 diabetes data set and new york dataset sample of comments. Have performed required EDA on datasets.
+
+Evaluation Metric
+
+From the line plot below for error and sum of square error with number of clusters it can be seen that error
+graph balances out with increase in the number of clusters i.e from 2 to 5. The error is decreasing with
+increase in number of clusters. Firstly there is a small increase and then the error deceases with increase
+in clusters.The sum of square error shows a decrease with increase in the number of clusters. From the box
+plot for error wrt number of clusters, shows the median error for each cluster shows a gradual decrease after
+a small rise initially. The box plot of runtime shows that with increase in number of clusters the median
+run time also increases with increase in number of clusters. When the runtime of kmeans llyos is compared
+to runtime of kmeans with sse convergence it can be seen that for less number of clusters the median run
+time of kmeans llyod is more that that of kmeans with SSE convergence i.e it takes more time to converge.
+But when number of clusters increases i.e becomes 5, the median time to converge for kmeans with sse
+convergence is more than that of kmeans llyod. When number of clusters become more run time of kmeans
+lyods is less than that of sse converged kmeans
+
+![image](https://user-images.githubusercontent.com/37649277/236168140-5620bc4a-393d-4c94-937a-269b48d94796.png)
+![image](https://user-images.githubusercontent.com/37649277/236168202-53f2802e-b478-451c-91c8-f53176dc0d2c.png)
+![image](https://user-images.githubusercontent.com/37649277/236168232-04c0333a-88c9-40a1-a6cf-a577abbb77f3.png)
+![image](https://user-images.githubusercontent.com/37649277/236168246-bb94f810-dd25-424c-beb5-6f5877a84cc1.png)
+
+
 
 kmeans plus plus algorithm
 
@@ -172,4 +208,22 @@ error is expected to be less. Rest the stopping conditions and other steps are s
 Have ran this algorithm for diabetes data set and new york dataset sample of comments. Have performed
 required EDA on datasets.
 
-![image](https://user-images.githubusercontent.com/37649277/236167014-5dcbad7a-a08e-4df4-be3d-8b5a46f8a190.png)
+Evaluation Metrics
+
+From the line plot below for error and sum of square error with number of clusters it can be seen that error
+graph balances out with increase in the number of clusters i.e from 2 to 5. The error is decreasing with
+increase in number of clusters. At end there is slight increase in the error.The sum of square error shows
+an initial small increase with increase in the number of clusters and then decreases with increase in clusters.
+From the box plot for error wrt number of clusters, shows the median error for each cluster shows a gradual
+decrease . The box plot of runtime shows that with increase in number of clusters the median run time also
+increases with increase in number of clusters.
+When the runtime of kmeans plus plus is compared to runtime of kmeans with sse convergence and kmeans
+llyod it can be seen that kmeans plus plus have more median running time than other two variations.
+
+![image](https://user-images.githubusercontent.com/37649277/236168511-318626b0-fd83-4749-96ac-93e1d1bf6aa9.png)
+![image](https://user-images.githubusercontent.com/37649277/236168531-3d4547a5-c2e4-4db9-86f5-63305b88fa66.png)
+![image](https://user-images.githubusercontent.com/37649277/236168543-12f69012-d1fb-454a-8882-dbf0d244fb83.png)
+![image](https://user-images.githubusercontent.com/37649277/236168562-fa539577-5d00-43f3-82c4-d05dc413f352.png)
+ 
+The code is also executed on other datasets.
+Please refer the codes and the report to get more details
